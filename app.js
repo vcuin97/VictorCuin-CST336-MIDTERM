@@ -28,12 +28,15 @@
                  
                   success: function(result,status) {
                      result.mycallback.forEach(function (src){ 
-                         $("#").append("<div class=\"img-thumbnail flex-item\"><img src=\""+src+"\"></div>");
+                        $("#").append("<div class=\"img-thumbnail flex-item\"><img src=\""+src+"\"></div>");
+                        $("#title").html(result.title);
+                        $("#authors").html(result.authors);
+                        $("#publish_date").html(result.publish_date);
+                        $("#publishers").html(result.publishers);
+                        $("#ISBN").html(result.isbn);
+                        $("#number_of_pages").html(result.number_of_pages);
                      });
                      
-                     $("#info_url").html(result.info_url);
-                     $("#images").html(`<figure><img src=""https://covers.openlibrary.org/b/id/5546156-M.jpg"">Likes: ${result.hits[0].likes}
-                                        <img src='${result.cover[0].webformatURL}' width='300'></figure>`);
                      
                   }
                   // alert(result.hits[0].webformatURL);
