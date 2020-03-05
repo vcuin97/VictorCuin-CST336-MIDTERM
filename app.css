@@ -1,0 +1,38 @@
+#searchBtn{
+    color:red;
+}
+body{
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.jumbotron{
+    color:black;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+#likes{
+    text-align: center;
+    font-weight: bold;
+
+}
+#images{
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#cover{
+    border: 5px;
+    border-radius: 10px;
+}
+
+#info{
+    margin: 50px;
+    font-size: 25px;
+}
